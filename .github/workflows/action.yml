@@ -21,7 +21,7 @@ jobs:
     steps:
 #     - name: Select latest Xcode
 #       run: "sudo xcode-select -s /Applications/Xcode_$XC_VERSION.app"
-#     - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
     
 #     - name: Build
 #       run: swift build -v
@@ -34,7 +34,7 @@ jobs:
 # #       run: xcodebuild test -workspace GithubActionDemo.xcodeproj/project.xcworkspace -scheme GithubActionDemo -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max'
 #     - name: Test
 #       run: xcodebuild clean test -project "GithubActionDemo.xcodeproj" -scheme "GithubActionDemo" -destination "platform=iOS Simulator,name=iPhone 11 Pro Max,OS=latest"
-    - uses: actions/checkout@v1
+#     - uses: actions/checkout@v1
     - name: Force Xcode 11
       run: sudo xcode-select -switch /Applications/Xcode_11.3.app
     - name: Run tests
