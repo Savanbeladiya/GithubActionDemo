@@ -38,7 +38,7 @@ jobs:
 #           Pro Max'
     - name: Test
 #       run: xcodebuild test -project GithubActionDemo.xcodeproj -scheme ProjTests -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 11,OS=15"
-      run: xcodebuild clean test -project "GithubActionDemo.xcworkspace" -scheme "GithubActionDemo" -destination "platform=iOS Simulator,name=iPhone 11 Pro Max,OS=latest"
+      run: xcodebuild clean test -project "GithubActionDemo.xcodeproj" -scheme "GithubActionDemo" -destination "platform=iOS Simulator,name=iPhone 11 Pro Max,OS=latest"
 
 
 
